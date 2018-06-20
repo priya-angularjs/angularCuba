@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened>
+    <mat-toolbar color="primary" style="height:50px;">
+      <span class="toolbar-align">Vee Worklog</span>
+    </mat-toolbar>
+    <div class="header-image">
+      <img src="../../assets/imgs/veelog.png" alt="Avatar" class="avatar">
+    </div>
+    <p-dropdown [options]="roles"  optionLabel="role" [style]="{'width':'220px'}"></p-dropdown>
+    <div>
+      <button mat-icon-button class="button-class button-position">
+        <i class="fa fa-windows"></i>
+        <!--<mat-icon aria-label="Example icon-button with a heart icon" matRipple>favorite</mat-icon>-->
+      </button>
+      <button mat-icon-button class="button-class" routerLink="/">
+        <i class="fa fa-sign-out"></i>
+        <!--<mat-icon aria-label="Example icon-button with a heart icon" matRipple>favorite</mat-icon>-->
+      </button>
+    </div>
+
+
+    <p-panelMenu [model]="items" [style]="{'width':'220px'}" [multiple]="false"></p-panelMenu>
+  </mat-sidenav>
+  <mat-sidenav-content><div class="welcome-text">
+    Welcome To Vee Worklog !
+  </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

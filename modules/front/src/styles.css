@@ -1,0 +1,19 @@
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~primeng/resources/themes/omega/theme.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+@import "~font-awesome/css/font-awesome.css";
+.form-full-width{
+  width: 100%;
+}
+.card-margin{
+  margin: 30% 5% 0 5%;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 50px;
+}
+.toolbar-align{
+  margin-left: 15px;
+}

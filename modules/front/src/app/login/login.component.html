@@ -1,0 +1,47 @@
+<!-- Card -->
+<div class="row">
+  <div class="col-md-4 col-sm-12"></div>
+  <div class="col-md-4 col-sm-12">
+    <mat-card class="card-margin">
+
+      <!-- Card body -->
+
+        <!-- Material form register -->
+        <form [formGroup]="loginForm">
+          <p class="h4 text-center py-4">Sign up</p>
+
+          <div>
+
+            <mat-form-field  class="form-full-width">
+              <input matInput placeholder="Username" formControlName="username">
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+          </div>
+
+
+          <!-- Material input email -->
+          <div>
+            <mat-form-field class="form-full-width">
+              <input matInput placeholder="Password" type="password" formControlName="password">
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+          </div>
+
+
+
+          <div>
+            <button mat-raised-button color="primary" (click)="login(loginForm)">Submit</button>
+          </div>
+        </form>
+        <!-- Material form register -->
+
+        <!-- Card body -->
+    </mat-card>
+    <!-- Card -->
+  </div>
+  <div class="col-md-4 col-sm-12">
+
+  </div>
+
+</div>
+
